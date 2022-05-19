@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment-Method</title>
+    <script src="https://kit.fontawesome.com/1e3d70fa90.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="w-8/12 mx-auto container py-10 font-bold">
+            <h2 class="text-xl">Checkout</h2>
+            <div class="flex justify-between py-10">
+                <div class="step"></div>
+                <div class="step"></div>
+                <div class="step"></div>
+                <div class="step"></div>
+            </div>
+            <div class="payment-method">
+                <label for="card" class="method">
+                  <div class="card-logos">
+                    <img src="./visa_logo.png"/>
+                    <img src="./mastercard_logo.png"/>
+                  </div>
+           
+                  <div class="radio-input">
+                    <input id="card" type="radio" name="payment">
+                    Pay ₹ 200.00 with credit card
+                  </div>
+                </label>
+           
+                <label for="paypal" class="method">
+                  <img src="./paypal_logo.png"/>
+                  <div class="radio-input">
+                    <input id="paypal" type="radio" name="payment">
+                    Pay ₹ 200.00 with PayPal
+                  </div>
+                </label>
+              </div>
+              <!-- input field -->
+              <div class="flex justify-between w-full text-gray-500 gap-6 font-light">
+                <div class="w-1/2">
+                  <label for="cardholder">Cardholder's Name</label>
+                  <input type="text" id="cardholder" class="w-full py-2 px-2 mt-3 border border-gray-400 outline-input-design"/>
+                  <div class="flex mt-4 w-full">
+                    <div class="w-1/2 mr-4">
+                      <label for="date">Valid thru</label>
+                      <input type="text" id="date" placeholder="MM / YY"  class="w-full py-2 px-2 mt-2 border border-gray-400 outline-input-design"/>
+                    </div>
+           
+                    <div class="w-1/2 ">
+                      <label for="verification">CVV / CVC *</label>
+                      <input type="password" id="verification" class="w-full py-2 px-2 mt-2 border border-gray-400 outline-input-design"/>
+                    </div>
+                  </div>
+           
+                </div>
+                <div class="flex flex-col w-1/2">
+                    <div>
+                  <label for="cardnumber">Card Number</label>
+                  <input type="password" id="cardnumber" class="w-full py-2 px-2 mt-3 border border-gray-400 outline-input-design"/>
+                </div>
+                  <span class="mt-10 text-sm font-light">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
