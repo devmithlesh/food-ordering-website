@@ -129,3 +129,7 @@ start second section
     }
 }
 
+/* z-index logo */
+.logo-zindex{
+    z-index: 1000 !important;
+}
