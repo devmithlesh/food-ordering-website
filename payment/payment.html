@@ -4,20 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create-Account For Foot Buy Foot</title>
-    <!-- tailwind css cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- main css file -->
-    <link rel="stylesheet" href="../style.css" />
-    <!-- style file for signin -->
-    <link rel="stylesheet" href="signup.css" />
+    <title>Payment-Method</title>
     <!-- fontawesome cdn -->
     <script
       src="https://kit.fontawesome.com/1e3d70fa90.js"
       crossorigin="anonymous"
     ></script>
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- main-style.css -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- payment css -->
+    <link rel="stylesheet" href="payment.css" />
   </head>
-
   <body>
     <header class="text-gray-600">
       <div
@@ -65,12 +64,12 @@
             >
             <a
               href="../signup/sign.html"
-              class="mr-10 hover:text-gray-900 cursor-pointer mrgn-top-btm text-blue-500"
+              class="mr-10 hover:text-gray-900 cursor-pointer mrgn-top-btm"
               >Sign In</a
             >
             <a
-              href="../payment/payment.html"
-              class="hover:text-gray-900 cursor-pointer mrgn-top-btm"
+              href="../payment/index.html"
+              class="hover:text-gray-900 cursor-pointer mrgn-top-btm text-blue-500"
               >Cart</a
             >
           </div>
@@ -83,37 +82,94 @@
         ></a>
       </div>
     </header>
-
-    <!-------------------------------------------------------------
-    Sign up card section
-    --------------------------------------------------------------->
-    <div class="container mx-auto pb-16">
-      <form class="form">
-        <h1>Sign <span style="color: #1e90ff">Up</span></h1>
-        <div>
-          <p>User Name</p>
-          <input
-            type="text"
-            class="my-6 py-1 px-2 border border-blue-500 w-full"
-          />
-          <p>Email Address</p>
-          <input
-            type="email"
-            class="my-6 py-1 px-2 border border-blue-500 w-full"
-          />
-          <p>Create password</p>
-          <input
-            type="password"
-            class="my-6 py-1 px-2 border border-blue-500 w-full"
-          />
-          <input
-            type="submit"
-            value="Sign Up"
-            class="py-2 w-full bg-blue-400 hover:bg-blue-500"
-          />
+    <!--------------------------------------------------------------
+  Payment check out card 
+------------------------------------------------------------------->
+    <section>
+      <form class="md:w-8/12 w-full mx-auto container py-10 px-4 md:px-0 font-bold overflow-hidden">
+        <h2 class="text-xl">Checkout</h2>
+        <div class="flex justify-between py-10 md:w-11/12 w-full overflow-hidden">
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step step-finish"></div>
         </div>
+        <div class="payment-method">
+          <label for="card" class="method">
+            <div class="card-logos">
+              <img src="./visa_logo.png" />
+              <img src="./mastercard_logo.png" />
+            </div>
+
+            <div class="radio-input">
+              <input id="card" type="radio" name="payment" />
+              Pay ₹ 200.00 with credit card
+            </div>
+          </label>
+
+          <label for="paypal" class="method">
+            <img src="./paypal_logo.png" />
+            <div class="radio-input">
+              <input id="paypal" type="radio" name="payment" />
+              Pay ₹ 200.00 with PayPal
+            </div>
+          </label>
+        </div>
+        <!-- input field -->
+        <div class="flex justify-between w-full text-gray-500 gap-6 font-light">
+          <div class="w-1/2">
+            <label for="cardholder">Cardholder's Name</label>
+            <input
+              type="text"
+              id="cardholder"
+              class="w-full py-2 px-2 mt-3 border border-gray-400 outline-input-design"
+            />
+            <div class="flex mt-4 w-full">
+              <div class="w-1/2 mr-4">
+                <label for="date">Valid thru</label>
+                <input
+                  type="date"
+                  id="date"
+                  placeholder="MM / YY"
+                  class="w-full py-2 px-2 mt-2 border border-gray-400 outline-input-design"
+                  required
+                />
+              </div>
+
+              <div class="w-1/2">
+                <label for="verification">CVV / CVC *</label>
+                <input
+                  type="password"
+                  id="verification"
+                  class="w-full py-2 px-2 mt-2 border border-gray-400 outline-input-design"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col w-1/2">
+            <div>
+              <label for="cardnumber">Card Number</label>
+              <input
+                type="password"
+                id="cardnumber"
+                class="w-full py-2 px-2 mt-3 border border-gray-400 outline-input-design"
+                required
+              />
+            </div>
+            <span class="mt-10 text-sm font-light"
+              >* CVV or CVC is the card security code, unique three digits
+              number on the back of your card separate from its number.</span
+            >
+          </div>
+        </div>
+        <input
+          type="submit"
+          value="Submit"
+          class="py-2 px-3 bg-blue-400 text-gray-100 text-xs mt-4 rounded"
+        />
       </form>
-    </div>
+    </section>
 
     <!-----------------------------------------------------------
       footer start
@@ -326,9 +382,11 @@
         </div>
       </div>
     </footer>
-    <!------------------------------------------------------------
+      <!------------------------------------------------------------
         footer end
       ------------------------------------------------------------->
-    <script src="../index.js"></script>
+
+      <!-- javascript flie -->
+      <script src="../index.js"></script>
   </body>
 </html>

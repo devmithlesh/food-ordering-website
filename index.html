@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Ordering Hub</title>
+    <!-- favicon logo -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- main css file -->
     <link rel="stylesheet" href="style.css" />
+    <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome cdn -->
     <script
       src="https://kit.fontawesome.com/1e3d70fa90.js"
       crossorigin="anonymous"
@@ -18,7 +23,7 @@
   ------------------------------------------------------------------->
     <header class="text-gray-600">
       <div
-        class="container mx-auto flex xl:justify-between md:justify-between xl:items-center md:items-center py-3 flex-col md:flex-row shadow-sm shadow-gray-100 xl:px-10 md:px-10 px-4"
+        class="container mx-auto flex xl:justify-between md:justify-between xl:items-center md:items-center py-2 flex-col md:flex-row shadow-sm shadow-gray-100 xl:px-10 md:px-10 px-4"
       >
         <a
           class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
@@ -26,7 +31,7 @@
           <img src="./logo.png" alt="" class="xl:w-16 md:w-16 w-10" />
           <span class="ml-1 xl:text-lg md:text-lg text-xs">FOOD HUB</span>
         </a>
-        <div
+        <form
           href="#"
           class="border border-blue-500 flex items-center justify-between px-4 py-1 rounded-xl"
         >
@@ -34,12 +39,12 @@
             type="text"
             placeholder="Search Food"
             class="border-0 outline-0 text-sm text-gray-500 font-light"
-          />
+          required/>
           <i
             class="fa-solid fa-magnifying-glass text-blue-500 hover:opacity-80"
           >
           </i>
-        </div>
+        </form>
         <nav
           class="flex flex-wrap items-center text-sm font-bold hidden xl:block md:block nav-bar-css"
           id="menu"
@@ -65,7 +70,7 @@
               class="mr-10 hover:text-gray-900 cursor-pointer mrgn-top-btm"
               >Sign In</a
             >
-            <a href="./payment/index.html" class="hover:text-gray-900 cursor-pointer mrgn-top-btm"
+            <a href="./payment/payment.html" class="hover:text-gray-900 cursor-pointer mrgn-top-btm"
               >Cart</a
             >
           </div>
@@ -99,7 +104,7 @@
             <div
               class="absolute bottom-12 left-0 xl:right-0 md:right-0 text-center"
             >
-              <h2 class="text-5xl font-bold text-gray-100 drop-shadow-xl">
+              <h2 class="text-5xl font-bold text-gray-100 drop-shadow-2xl contrast-200 ">
                 First <span class="text-blue-500">slide label</span>
               </h2>
               <p class="text-gray-100 tracking-wider">
@@ -276,11 +281,11 @@
         <!-- card first row -->
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food1.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -316,11 +321,11 @@
 
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food2.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -355,11 +360,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food3.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -394,11 +399,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food4.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -434,11 +439,11 @@
         <!-- card second row -->
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food5.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -473,11 +478,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food6.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -512,11 +517,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food7.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -551,11 +556,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food8.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -591,11 +596,11 @@
         <!-- card third row -->
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food9.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -630,11 +635,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="w-xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="w-xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food10.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -669,11 +674,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="w-xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="w-xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food11.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -708,11 +713,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="w-xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="w-xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food12.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -747,11 +752,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food17.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -786,11 +791,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food18.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -825,11 +830,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food19.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -864,11 +869,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food20.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -904,11 +909,11 @@
         <!-- next row -->
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food12.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -943,11 +948,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food13.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -982,11 +987,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food14.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -1021,11 +1026,11 @@
         </div>
         <div class="w-full border border-blue-100 hover:border-blue-500">
           <a href="#">
-            <div class="xl:w-56 lg:w-56 w-40 mx-auto">
+            <div class="xl:w-56 lg:w-56 w-full mx-auto">
               <img
                 src="./foodsimg/food15.jpeg"
                 alt="shoes-img"
-                class="w-full py-6"
+                class="w-full md:py-6 pb-6  md:pb-0"
               />
             </div>
             <div class="px-4 pb-4 text-sm">
@@ -1094,8 +1099,8 @@
               </li>
             </div>
             <div class="text-gray-100">
-              <p class="text-sm pt-2 py-1">heenalakha2001@gmail.com</p>
-              <p class="text-sm" py-1>KCLIMT</p>
+              <p class="text-sm pt-2 py-1">mithleshnirmal786@gmail.com</p>
+              <p class="text-sm py-1">KCL-IMT</p>
               <p class="text-sm py-1">BCA 6th</p>
             </div>
           </div>
